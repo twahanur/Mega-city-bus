@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="homepage">
+        <!--Header and Menu Section-->
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Booking Section-->
+        <main class="container">
+
+            <div class="row d-flex align-self-center">
+                <div class="LefisideContent col-md-6 mt-5 pt-5">
+                    <div class="booking-content">
+                        <h1>Mega City Bus</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type
+                            and
+                            scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <!-- end left side content -->
+
+
+                <!-- Booking Form -->
+                <div class="rightSideContent col-md-6 align-self-center">
+
+
+                    <!-- Book Now Button -->
+                    <button id="bookingButton" class="float-end">
+                        Book Now
+                    </button>
+
+
+                    <!-- Booking form -->
+                    <div class="booking-form" id="bookNow">
+                        <h3>Explore By Bus</h3>
+                        <div class="inputs">
+                            <div class="input-group">
+                                <label" for="">From</label>
+                                    <input class="inp-style " type="text" name="" placeholder="Dhaka">
+                            </div>
+                            <div class="input-group">
+                                <label" for="">To</label>
+                                    <input class="inp-style" type="text" name="" placeholder="Chittagone">
+                            </div>
+                        </div>
+
+                        <div class="inputs">
+                            <div class="input-group">
+                                <label" for="">Departure</label>
+                                    <input class="inp-style" type="date" name="">
+                            </div>
+                            <div class="input-group">
+                                <label for="">Return</label>
+                                <input class="inp-style date-form" type="date" name="">
+                            </div>
+                        </div>
+
+
+
+                        <!-- Input form -->
+                        <div class="inputs">
+
+
+                            <!-- first class ticket amount selection -->
+                            <div class="input-group f-class">
+                                <div>
+                                    <label for="">First Class ($150)</label>
+                                    <input id="firstClassInput" class="inp-style inp-width" type="number" name=""
+                                        value="0">
+                                </div>
+                                <div class="plusmMinusBtn">
+                                    <button id="firstClassPlusBtn">+</button><br><button
+                                        id="firstClassMinusBtn">-</button>
+                                </div>
+                            </div>
+
+
+                            <!-- economy class ticket amount selection -->
+                            <div class="input-group f-class">
+                                <div>
+                                    <label for="">Economy ($100)</label>
+                                    <input id="economyClassInput" class="inp-style inp-width" type="number" name=""
+                                        value="0">
+                                </div>
+                                <div class="plusmMinusBtn">
+                                    <button id="economyClassPlusBtn">+</button><br><button
+                                        id="enonomyClassMinusBtn">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- total ticket prize calculation -->
+                        <div class="calculations">
+                            <div class="amount">
+                                <div class="left">
+                                    <p>Subtotal</p>
+                                </div>
+                                <div class="right">
+                                    <p>$ <span id="subTotal">00</span></p>
+                                </div>
+                            </div>
+
+                            <div class="amount">
+                                <div class="left">
+                                    <p>Charge 10% VAT</p>
+                                </div>
+                                <div class="right">
+                                    <p>$<span id="tax">00</span></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="amount">
+                                <div class="left">
+                                    <h4>Total</h4>
+                                </div>
+                                <div class="right">
+                                    <p>$<span id="TotalCost">00</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="bookingConfirmation" class="btn-style">Book Now</button>
+                    </div>
+                    <!-- end Form -->
+
+
+                    <!-- Confirmation Form -->
+                    <div id="confirmationForm" class="bg-success confirmationForm">
+                        <div class="p-3">
+                         <h1 style="text-align: center;">Mega City <span style="color: blue;">Bus</span></h1>
+                         <div class="row">
+                             <div class="row">
+                                 <h3>Consumer Name:</h3>
+                             </div>
+                             <div class="row">
+                                 <h3>Contact Number:</h3>
+                             </div>
+                             <div class="row">
+                                 <h3>Booking Id:</h3>
+                             </div>
+                             <div class="row">
+                                 <h3>Booking Time:</h3>
+                             </div>
+                         </div>
+                         <div class="row border">
+                             <h2 class="border pt-3 pb-3">Consumar Trip Details</h2>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4 border" >First Class Seat:</div>
+                             <div class="col-sm-8 border" id="firstClassSeats"></div>
+                         </div><div class="row">
+                             <div class="col-sm-4 border">Economy Class Seat:</div>
+                             <div class="col-sm-8 border" id="economyClassSeats"></div>
+                         </div><div class="row">
+                             <div class="col-sm-4 border">Total Seat:</div>
+                             <div class="col-sm-8 border"  id="totalSeats"></div>
+                         </div><div class="row">
+                             <div class="col-sm-4 border">Total Cost:</div>
+                             <div class="col-sm-8 border" id="totalCostForSeats"></div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4 border">Bus Id:</div>
+                             <div class="col-sm-8 border">MCB9250</div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4 border">Travel Date:</div>
+                             <div class="col-sm-8 border"></div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4 border">Depature From:</div>
+                             <div class="col-sm-8 border"></div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4 border">Arrive To:</div>
+                             <div class="col-sm-8 border"></div>
+                         </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="style.js"></script>
+    <script src="main.js"></script>
+    <!--Thank You-->
+</body>
+
+</html>
