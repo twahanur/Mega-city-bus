@@ -50,7 +50,7 @@
 
 
                 <!-- Booking Form -->
-                <div class="rightSideContent col-md-6 align-self-center">
+                <div class="rightSideContent mt-5 col-md-6 align-self-center">
 
 
                     <!-- Book Now Button -->
@@ -69,18 +69,18 @@
                             </div>
                             <div class="input-group">
                                 <label" for="">To</label>
-                                    <input class="inp-style" type="text" name="" placeholder="Chittagone">
+                                    <input class="inp-style" type="text" name="" placeholder="Khulna">
                             </div>
                         </div>
 
                         <div class="inputs">
                             <div class="input-group">
                                 <label" for="">Departure</label>
-                                    <input class="inp-style" type="date" name="">
+                                    <input id="departureDate" class="inp-style" type="date" name="">
                             </div>
                             <div class="input-group">
                                 <label for="">Return</label>
-                                <input class="inp-style date-form" type="date" name="">
+                                <input id="returnDate" class="inp-style date-form" type="date" name="">
                             </div>
                         </div>
 
@@ -98,8 +98,7 @@
                                         value="0">
                                 </div>
                                 <div class="plusmMinusBtn">
-                                    <button id="firstClassPlusBtn">+</button><br><button
-                                        id="firstClassMinusBtn">-</button>
+                                    <button class="btn border rounded" id="firstClassPlusBtn">+</button><br><button class="btn border rounded" id="firstClassMinusBtn">-</button>
                                 </div>
                             </div>
 
@@ -112,8 +111,7 @@
                                         value="0">
                                 </div>
                                 <div class="plusmMinusBtn">
-                                    <button id="economyClassPlusBtn">+</button><br><button
-                                        id="enonomyClassMinusBtn">-</button>
+                                    <button class="btn border rounded" id="economyClassPlusBtn">+</button><br><button class="btn border rounded" id="enonomyClassMinusBtn">-</button>
                                 </div>
                             </div>
                         </div>
@@ -155,21 +153,21 @@
 
 
                     <!-- Confirmation Form -->
-                    <div id="confirmationForm" class="bg-success confirmationForm">
+                    <div id="confirmationForm" class="bg-white confirmationForm">
                         <div class="p-3">
                          <h1 style="text-align: center;">Mega City <span style="color: blue;">Bus</span></h1>
                          <div class="row">
                              <div class="row">
-                                 <h3>Consumer Name:</h3>
+                                 <h4 class="col-sm-6">Consumer Name:<h5 class="col-sm-6">Kazi Thohanur Rahman</h5></h4>
                              </div>
                              <div class="row">
-                                 <h3>Contact Number:</h3>
+                                <h4 class="col-sm-6">Contact Number: <h5 class="col-sm-6">01708902648</h5></h4>
                              </div>
                              <div class="row">
-                                 <h3>Booking Id:</h3>
+                                <h4 class="col-sm-6">Booking Id: <h5 class="col-sm-6">MCB154165</h5></h4>
                              </div>
                              <div class="row">
-                                 <h3>Booking Time:</h3>
+                                <h4 class="col-sm-6">Booking Time: <h5 class="col-sm-6"><span id="date">00</span></h5></h4>
                              </div>
                          </div>
                          <div class="row border">
@@ -177,16 +175,16 @@
                          </div>
                          <div class="row">
                              <div class="col-sm-4 border" >First Class Seat:</div>
-                             <div class="col-sm-8 border" id="firstClassSeats"></div>
+                             <div class="col-sm-8 border" id="firstClassSeats">00</div>
                          </div><div class="row">
                              <div class="col-sm-4 border">Economy Class Seat:</div>
-                             <div class="col-sm-8 border" id="economyClassSeats"></div>
+                             <div class="col-sm-8 border" id="economyClassSeats">00</div>
                          </div><div class="row">
                              <div class="col-sm-4 border">Total Seat:</div>
                              <div class="col-sm-8 border"  id="totalSeats"></div>
                          </div><div class="row">
                              <div class="col-sm-4 border">Total Cost:</div>
-                             <div class="col-sm-8 border" id="totalCostForSeats"></div>
+                             <div class="col-sm-8 border" id="totalCostforSeats"></div>
                          </div>
                          <div class="row">
                              <div class="col-sm-4 border">Bus Id:</div>
@@ -194,15 +192,19 @@
                          </div>
                          <div class="row">
                              <div class="col-sm-4 border">Travel Date:</div>
-                             <div class="col-sm-8 border"></div>
+                             <div id="confirmTravelDate" class="col-sm-8 border">00</div>
                          </div>
                          <div class="row">
+                            <div class="col-sm-4 border">Return Date:</div>
+                            <div id="confirmReturnDate" class="col-sm-8 border">00</div>
+                        </div>
+                         <div class="row">
                              <div class="col-sm-4 border">Depature From:</div>
-                             <div class="col-sm-8 border"></div>
+                             <div class="col-sm-8 border">Dhaka</div>
                          </div>
                          <div class="row">
                              <div class="col-sm-4 border">Arrive To:</div>
-                             <div class="col-sm-8 border"></div>
+                             <div class="col-sm-8 border">Khulna</div>
                          </div>
                         </div>
                      </div>
@@ -213,6 +215,7 @@
     </div>
     <script src="style.js"></script>
     <script src="main.js"></script>
+    <script src="confirmation.js"></script>
     <!--Thank You-->
 </body>
 
